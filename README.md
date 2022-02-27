@@ -1,2 +1,2 @@
-﻿# git-vscode-demo
+﻿# git-vscode
 - another line
