@@ -1,2 +1,2 @@
 ﻿# git-vscode-demo1
-- another line
+- Creating a prototype for a demo
