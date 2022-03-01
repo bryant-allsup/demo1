@@ -2,68 +2,112 @@
 <html>
 <head>
     <meta charset = "utf-8">
-    <title>{% block title %}Hard Drive Request{% endblock %}</title>
+    <title>{% block title %}Request{% endblock %}</title>
 </head>
 <body>
     <main>
         {% block content %}
-        <h1>
-            Create New Request
+        <h1 style = "font-size: 40px; margin-left: 320px;">
+            Search
         </h1>
-            <form>
-                <label for "First Name"> First Name</label><br>
-                <input type = "text" id="First Name" name = "First Name"><br>
+            <form style = "margin-left: 320px;">
+                <h1 style = "color: red; font-size: 15px;">Request Attribute</h1>
+                <label for "Request Reference No.">Request Reference No.</label><br>
+                <input type = "text" id = "Request Reference No." name = "Request Reference No."><br>
                 <br>
-                <label for "Last Name"> Last Name</label><br>
-                <input type = "text" id="Last Name" name = "Last Name"><br>
-                <br>
-                <label for "Event Name"> Event Name</label><br>
-                <input type = "text" id="Event Name" name = "Event Name"><br>
-                <br>
-                <label for "Event Type"> Event Type</label><br>
-                <select name = "Event Type" id = "Event Type">
-                    <option value = "Security Testing"> Security Testing</option>
-                </select><br>
-                <br>
-                <label for "Event Status"> Event Status</label><br>
-                <select name = "Event Status" id = "Event Status">
-                    <option value = "Confirmed"> Confirmed</option>
-                </select><br>
-                <br>
-                <label for "Request Status"> Request Status</label><br>
+                <label for "Request Status">Request Status</label><br>
                 <select name = "Request Status" id = "Request Status">
-                    <option value = "Pending"> Pending</option>
+                    <option value = "Confirmed">Confirmed</option>
                 </select><br>
                 <br>
-                <label for "Team Lead Name"> Team Lead Name</label><br>
-                <input type = "text" id="Team Lead Name" name ="Team Lead Name"><br>
+                <h1 style = "color: red; font-size: 15px;">Hard Drive Attribute</h1>
+                <label for "Total No. of Drives">Total No. of Drives</label><br>
+                <input type = "radio" id = "Less than" name = "Less than" value = "Less than">
+                <label for = "Less than">Less than</label><br>
+                <input type = "radio" id = "Equal" name = "Equal" value = "Equal">
+                <label for = "Equal">Equal</label><br>
+                <input type = "radio" id = "Greater than" name = "Greater than" value = "Greater than">
+                <label for = "Greater than">Greater than</label><br>
                 <br>
-                <label for "Number of Classified Hard Drives with SATA"> Number of Classified Hard Drives with SATA</label><br>
-                <input type = "text" id="Number of Classified Hard Drives with SATA" name = "Number of Classified Hard Drives with SATA"><br>
+                <h1 style = "color: red; font-size: 15px;">Event Attribute</h1>
+                <label for "Username">Username</label><br>
+                <input type = "text" id = "Username" name = "Username"><br>
                 <br>
-                <label for "Number of Unclassified Hard Drives with SATA"> Number of Unclassified Hard Drives with SATA</label><br>
-                <input type = "text" id="Number of Unclassified Hard Drives with SATA" name = "Number of Unclassified Hard Drives with SATA"><br>
+                <label for "Event Type">Event Type</label><br>
+                <select name = "Event Type" id = "Event Type">
+                    <option value = "Training">Training</option>
+                </select><br>
                 <br>
-                <label for "Number of Classified Hard Drives with M.2"> Number of Classified Hard Drives with M.2</label><br>
-                <input type = "text" id="Number of Classified Hard Drives with M.2" name = "Number of Classified Hard Drives with M.2"><br>
+                <h1 style = "color: red; font-size: 15px;">Date</h1>
+                <label for="Event Start Date">Event Start Date</label><br>
+                <input type="date" id="Event Start Date" name="Event Start Date"><br>
                 <br>
-                <label for "Number of Unclassified Hard Drives with M.2"> Number of Unclassified Hard Drives with M.2</label><br>
-                <input type = "text" id="Number of Unclassified Hard Drives with M.2" name = "Number of Unclassified Hard Drives with M.2"><br>
+                <label for="Event End Date">Event End Date</label><br>
+                <input type="date" id="Event End Date" name="Event End Date"><br>
                 <br>
-                <label for="Date of Request">Date of Request</label><br>
-                <input type="date" id="Date of Request" name="Date of Request"><br>
+                <label for="Request Date">Request Date</label><br>
+                <input type="date" id="Request Date" name="Request Date"><br>
                 <br>
-                <label for="Start Date">Start Date</label><br>
-                <input type="date" id="Start Date" name="Start Date"><br>
+                <label for="Need Drive Due by Date">Need Drive Due by Date</label><br>
+                <input type="date" id="Need Drive Due by Date" name="Need Drive Due by Date"><br>
                 <br>
-                <label for="End Date">End Date</label><br>
-                <input type="date" id="End Date" name="End Date"><br>
+                <h1 style = "color: red; font-size: 15px;">Keyword</h1>
+                <label for "Expression">Expression</label><br>
+                <input type = "text" id = "Expression" name = "Expression"><br>
                 <br>
-                <label for "Comments"> Comments</label><br>
-                <input type = "text" id="Comments" name = "Comments"><br>
-                <br>
-                <input type = "submit" value = "Create">
+                <input type = "submit" value = "Search" style = "font-size: 25px;">
             </form>
+            <!--Request Information-->
+            <h1 style = "font-size: 40px; margin-left: 850px; margin-top: -915px;">
+                Request Information
+            </h1>
+                <form style = "margin-left: 850px;">
+                    <h1 style = "color: red; font-size: 15px;">Summary View of Requests</h1> <!--Start Here-->
+                    <label for "Request Reference No.">Request Reference No.</label><br>
+                    <input type = "text" id = "Request Reference No." name = "Request Reference No."><br>
+                    <br>
+                    <label for "Request Status">Request Status</label><br>
+                    <select name = "Request Status" id = "Request Status">
+                        <option value = "Confirmed">Confirmed</option>
+                    </select><br>
+                    <br>
+                    <h1 style = "color: red; font-size: 15px;">Hard Drive Attribute</h1>
+                    <label for "Total No. of Drives">Total No. of Drives</label><br>
+                    <input type = "radio" id = "Less than" name = "Less than" value = "Less than">
+                    <label for = "Less than">Less than</label><br>
+                    <input type = "radio" id = "Equal" name = "Equal" value = "Equal">
+                    <label for = "Equal">Equal</label><br>
+                    <input type = "radio" id = "Greater than" name = "Greater than" value = "Greater than">
+                    <label for = "Greater than">Greater than</label><br>
+                    <br>
+                    <h1 style = "color: red; font-size: 15px;">Event Attribute</h1>
+                    <label for "Username">Username</label><br>
+                    <input type = "text" id = "Username" name = "Username"><br>
+                    <br>
+                    <label for "Event Type">Event Type</label><br>
+                    <select name = "Event Type" id = "Event Type">
+                        <option value = "Training">Training</option>
+                    </select><br>
+                    <br>
+                    <h1 style = "color: red; font-size: 15px;">Date</h1>
+                    <label for="Event Start Date">Event Start Date</label><br>
+                    <input type="date" id="Event Start Date" name="Event Start Date"><br>
+                    <br>
+                    <label for="Event End Date">Event End Date</label><br>
+                    <input type="date" id="Event End Date" name="Event End Date"><br>
+                    <br>
+                    <label for="Request Date">Request Date</label><br>
+                    <input type="date" id="Request Date" name="Request Date"><br>
+                    <br>
+                    <label for="Need Drive Due by Date">Need Drive Due by Date</label><br>
+                    <input type="date" id="Need Drive Due by Date" name="Need Drive Due by Date"><br>
+                    <br>
+                    <h1 style = "color: red; font-size: 15px;">Keyword</h1>
+                    <label for "Expression">Expression</label><br>
+                    <input type = "text" id = "Expression" name = "Expression"><br>
+                    <br>
+                    <input type = "submit" value = "Search" style = "font-size: 25px;">
+                </form>
         {% endblock %}
     </main>
 </body>
